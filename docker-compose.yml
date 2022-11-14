@@ -1,7 +1,7 @@
 version: '3'
 services:
     node:
-        image: ahildarshan/node
+        image: sukhanya/node
         volumes:
             - ./:/usr/src/app
             - /usr/src/app/node_modules
