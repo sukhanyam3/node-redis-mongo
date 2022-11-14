@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const redis = require('redis')
 const util = require('util')
 
-const redisUrl = 'redis://65.0.94.153:6379';
+const redisUrl = 'redis://15.206.82.116:6379';
 const client = redis.createClient(redisUrl);
 client.hget = util.promisify(client.hget);                // client get does not support promises. this is a way to promisify them
 
